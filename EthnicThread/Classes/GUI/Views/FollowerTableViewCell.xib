@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FollowerCell" id="KGk-i7-Jjw" customClass="FollowerTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cg8-41-5cE" customClass="AvatarButton">
+                        <rect key="frame" x="10" y="20" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="0P3-Rx-LTB"/>
+                            <constraint firstAttribute="width" constant="50" id="Jy0-WH-QPy"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mff-g1-mqX">
+                        <rect key="frame" x="70" y="14" width="153" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="8Tq-L0-Jqt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.69803923369999998" green="0.43921571970000001" blue="0.6784313917" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvF-YM-Wep">
+                        <rect key="frame" x="225" y="10" width="87" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="AZJ-eI-IO0"/>
+                            <constraint firstAttribute="width" constant="87" id="NoG-cm-Oab"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <inset key="titleEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="Unfollow" image="unfollower_icon.png">
+                            <color key="titleColor" red="1" green="0.70196080207824707" blue="0.34117648005485535" alpha="1" colorSpace="deviceRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="handleUnfollowButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lyJ-0X-uQE"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYp-69-bQM">
+                        <rect key="frame" x="70" y="40" width="242" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="lXx-11-HSW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" image="location_icon.png">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ous-dF-JMK">
+                        <rect key="frame" x="69" y="62" width="243" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="g7k-6F-Pya"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" image="small_item_count.png">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JvF-YM-Wep" firstAttribute="leading" secondItem="Mff-g1-mqX" secondAttribute="trailing" constant="2" id="3B9-FD-uRe"/>
+                    <constraint firstItem="JvF-YM-Wep" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="9qt-Tc-gNc"/>
+                    <constraint firstItem="rYp-69-bQM" firstAttribute="top" secondItem="Mff-g1-mqX" secondAttribute="bottom" constant="5" id="IKt-V4-BS8"/>
+                    <constraint firstItem="ous-dF-JMK" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Jra-TN-eY0"/>
+                    <constraint firstItem="ous-dF-JMK" firstAttribute="top" secondItem="rYp-69-bQM" secondAttribute="bottom" id="Mgh-5j-lCq"/>
+                    <constraint firstItem="cg8-41-5cE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="ah9-Wb-Nij"/>
+                    <constraint firstItem="JvF-YM-Wep" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="kVU-t0-5g7"/>
+                    <constraint firstItem="Mff-g1-mqX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="kh1-3a-APc"/>
+                    <constraint firstItem="rYp-69-bQM" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="nBs-YA-ESN"/>
+                    <constraint firstItem="ous-dF-JMK" firstAttribute="leading" secondItem="cg8-41-5cE" secondAttribute="trailing" constant="9" id="r2n-7k-BX3"/>
+                    <constraint firstItem="cg8-41-5cE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="tjg-pm-k9q"/>
+                    <constraint firstItem="Mff-g1-mqX" firstAttribute="leading" secondItem="cg8-41-5cE" secondAttribute="trailing" constant="10" id="vm9-nC-P2s"/>
+                    <constraint firstItem="rYp-69-bQM" firstAttribute="leading" secondItem="cg8-41-5cE" secondAttribute="trailing" constant="10" id="xTv-AD-Txk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnAvatar" destination="cg8-41-5cE" id="JnE-3R-Mgv"/>
+                <outlet property="btnItemCount" destination="ous-dF-JMK" id="Gel-mG-bmT"/>
+                <outlet property="btnLocation" destination="rYp-69-bQM" id="eXU-bV-SD0"/>
+                <outlet property="btnUnfollow" destination="JvF-YM-Wep" id="6Pj-fA-KFt"/>
+                <outlet property="lblFullName" destination="Mff-g1-mqX" id="ylP-VW-dZg"/>
+                <outlet property="lcWidthUnfollowButton" destination="NoG-cm-Oab" id="dQp-Hz-58H"/>
+            </connections>
+            <point key="canvasLocation" x="220" y="144"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="location_icon.png" width="10" height="15"/>
+        <image name="small_item_count.png" width="13" height="9"/>
+        <image name="unfollower_icon.png" width="13" height="13"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

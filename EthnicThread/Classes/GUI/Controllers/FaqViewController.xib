@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FaqViewController">
+            <connections>
+                <outlet property="indicator" destination="iCE-rd-cfl" id="Djf-rx-gM5"/>
+                <outlet property="lcTop" destination="50A-X9-4Tc" id="ddl-pU-9S7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="Gtq-uQ-FL6" id="1r2-Sh-VEi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gtq-uQ-FL6">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="3J0-AU-IxE"/>
+                    </connections>
+                </webView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="iCE-rd-cfl">
+                    <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Gtq-uQ-FL6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3Ds-AG-ByA"/>
+                <constraint firstItem="Gtq-uQ-FL6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="50A-X9-4Tc"/>
+                <constraint firstAttribute="trailing" secondItem="Gtq-uQ-FL6" secondAttribute="trailing" id="950-Ox-F3V"/>
+                <constraint firstAttribute="centerX" secondItem="iCE-rd-cfl" secondAttribute="centerX" id="KPg-Lb-beq"/>
+                <constraint firstItem="Gtq-uQ-FL6" firstAttribute="top" secondItem="iCE-rd-cfl" secondAttribute="bottom" constant="-53" id="KTo-M1-ayz"/>
+                <constraint firstAttribute="bottom" secondItem="Gtq-uQ-FL6" secondAttribute="bottom" id="o4t-Di-blL"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Gtq-uQ-FL6"/>
+                    <exclude reference="iCE-rd-cfl"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="KPg-Lb-beq"/>
+                    <exclude reference="3Ds-AG-ByA"/>
+                    <exclude reference="50A-X9-4Tc"/>
+                    <exclude reference="950-Ox-F3V"/>
+                    <exclude reference="KTo-M1-ayz"/>
+                    <exclude reference="o4t-Di-blL"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Gtq-uQ-FL6"/>
+                    <include reference="iCE-rd-cfl"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="KPg-Lb-beq"/>
+                    <include reference="3Ds-AG-ByA"/>
+                    <include reference="50A-X9-4Tc"/>
+                    <include reference="950-Ox-F3V"/>
+                    <include reference="KTo-M1-ayz"/>
+                    <include reference="o4t-Di-blL"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="399" y="122"/>
+        </view>
+    </objects>
+</document>

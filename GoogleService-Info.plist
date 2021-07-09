@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>199107533674-dvs1cu42gj0ractqatf99nsf9ds79r10.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.199107533674-dvs1cu42gj0ractqatf99nsf9ds79r10</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAHA5QPO8ji4UiuAsh9jVe-zzWxq-rN1ls</string>
+	<key>GCM_SENDER_ID</key>
+	<string>199107533674</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ethnicthread.staging</string>
+	<key>PROJECT_ID</key>
+	<string>ethnicthread-android</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ethnicthread-android.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:199107533674:ios:9810fd6dbcd40535</string>
+	<key>DATABASE_URL</key>
+	<string>https://ethnicthread-android.firebaseio.com</string>
+</dict>
+</plist>

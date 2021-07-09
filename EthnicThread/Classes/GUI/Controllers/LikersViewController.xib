@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6724" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LikersViewController">
+            <connections>
+                <outlet property="lcTop" destination="8ST-lA-RZk" id="0Ln-Td-vKu"/>
+                <outlet property="tableView" destination="03g-On-ySE" id="igV-yE-YcS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="03g-On-ySE">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="c4y-I6-pyp"/>
+                        <outlet property="delegate" destination="-1" id="Eap-yb-cCK"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="03g-On-ySE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8ST-lA-RZk"/>
+                <constraint firstAttribute="bottom" secondItem="03g-On-ySE" secondAttribute="bottom" id="K7C-sF-66m"/>
+                <constraint firstItem="03g-On-ySE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QyW-2h-KwY"/>
+                <constraint firstAttribute="trailing" secondItem="03g-On-ySE" secondAttribute="trailing" id="hXH-lN-VtV"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="03g-On-ySE"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="8ST-lA-RZk"/>
+                    <exclude reference="K7C-sF-66m"/>
+                    <exclude reference="QyW-2h-KwY"/>
+                    <exclude reference="hXH-lN-VtV"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="03g-On-ySE"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="8ST-lA-RZk"/>
+                    <include reference="K7C-sF-66m"/>
+                    <include reference="QyW-2h-KwY"/>
+                    <include reference="hXH-lN-VtV"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

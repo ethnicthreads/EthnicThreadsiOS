@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AnImagePopupView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bEE-Uw-MKs">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="od8-5z-B1e">
+                            <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                            <animations/>
+                        </activityIndicatorView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fwP-TS-pda" customClass="CustomImageView">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="800" id="kgM-NE-mvv"/>
+                                <constraint firstAttribute="width" constant="400" id="m2f-6d-e7F"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="kgM-NE-mvv"/>
+                                    <exclude reference="m2f-6d-e7F"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="kgM-NE-mvv"/>
+                                    <include reference="m2f-6d-e7F"/>
+                                </mask>
+                            </variation>
+                        </imageView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="fwP-TS-pda" firstAttribute="top" secondItem="bEE-Uw-MKs" secondAttribute="top" id="32F-pr-wsf"/>
+                        <constraint firstAttribute="bottom" secondItem="fwP-TS-pda" secondAttribute="bottom" id="9Vl-Sm-nEX"/>
+                        <constraint firstAttribute="centerY" secondItem="od8-5z-B1e" secondAttribute="centerY" constant="0.5" id="LaO-as-DdA"/>
+                        <constraint firstItem="fwP-TS-pda" firstAttribute="leading" secondItem="bEE-Uw-MKs" secondAttribute="leading" id="NM4-Xi-xfU"/>
+                        <constraint firstAttribute="centerX" secondItem="od8-5z-B1e" secondAttribute="centerX" constant="-0.5" id="gNi-1W-FY4"/>
+                        <constraint firstAttribute="trailing" secondItem="fwP-TS-pda" secondAttribute="trailing" id="pid-Y8-FjA"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="od8-5z-B1e"/>
+                            <exclude reference="fwP-TS-pda"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="LaO-as-DdA"/>
+                            <exclude reference="gNi-1W-FY4"/>
+                            <exclude reference="32F-pr-wsf"/>
+                            <exclude reference="9Vl-Sm-nEX"/>
+                            <exclude reference="NM4-Xi-xfU"/>
+                            <exclude reference="pid-Y8-FjA"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="od8-5z-B1e"/>
+                            <include reference="fwP-TS-pda"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="LaO-as-DdA"/>
+                            <include reference="gNi-1W-FY4"/>
+                            <include reference="32F-pr-wsf"/>
+                            <include reference="9Vl-Sm-nEX"/>
+                            <include reference="NM4-Xi-xfU"/>
+                            <include reference="pid-Y8-FjA"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="D4b-lX-B5O"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bEE-Uw-MKs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HhK-g5-tG3"/>
+                <constraint firstAttribute="bottom" secondItem="bEE-Uw-MKs" secondAttribute="bottom" id="NON-fs-nKP"/>
+                <constraint firstItem="bEE-Uw-MKs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eRe-rP-KDh"/>
+                <constraint firstAttribute="trailing" secondItem="bEE-Uw-MKs" secondAttribute="trailing" id="i4O-CF-YRj"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="bEE-Uw-MKs"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="HhK-g5-tG3"/>
+                    <exclude reference="NON-fs-nKP"/>
+                    <exclude reference="eRe-rP-KDh"/>
+                    <exclude reference="i4O-CF-YRj"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="bEE-Uw-MKs"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="HhK-g5-tG3"/>
+                    <include reference="NON-fs-nKP"/>
+                    <include reference="eRe-rP-KDh"/>
+                    <include reference="i4O-CF-YRj"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="aiProgress" destination="od8-5z-B1e" id="gFb-Ie-dOh"/>
+                <outlet property="lcHeightZoomView" destination="kgM-NE-mvv" id="7QN-Hc-CHz"/>
+                <outlet property="lcWidthZoomView" destination="m2f-6d-e7F" id="2Zb-Ik-f7J"/>
+                <outlet property="scrollView" destination="bEE-Uw-MKs" id="lst-dD-iWX"/>
+                <outlet property="zoomImageView" destination="fwP-TS-pda" id="uoZ-ag-gxy"/>
+            </connections>
+        </view>
+    </objects>
+</document>

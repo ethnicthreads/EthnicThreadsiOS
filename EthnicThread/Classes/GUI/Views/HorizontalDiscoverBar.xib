@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HorizontalDiscoverBar">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OnF-TM-jL5" userLabel="locationContainer">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="16e-bH-sDr" userLabel="btnTurnOn">
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="DBL-o6-NwS"/>
+                                <constraint firstAttribute="height" constant="30" id="G8W-Oz-bIF"/>
+                            </constraints>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="Turn on">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </state>
+                            <connections>
+                                <action selector="didTapTurnOn:" destination="iN0-l3-epB" eventType="touchUpInside" id="GZJ-9K-GdL"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location for relevant results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAn-86-r1Q" userLabel="lblDetail">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Voh-oj-JQX"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="p7x-Vq-Ux8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="YAn-86-r1Q" firstAttribute="leading" secondItem="16e-bH-sDr" secondAttribute="trailing" constant="5" id="OJ9-X5-AJ9"/>
+                        <constraint firstItem="16e-bH-sDr" firstAttribute="leading" secondItem="OnF-TM-jL5" secondAttribute="leading" constant="70" id="ebl-n0-Hkj"/>
+                        <constraint firstItem="YAn-86-r1Q" firstAttribute="centerY" secondItem="OnF-TM-jL5" secondAttribute="centerY" id="jME-Di-XZU"/>
+                        <constraint firstItem="16e-bH-sDr" firstAttribute="centerY" secondItem="OnF-TM-jL5" secondAttribute="centerY" id="kaj-1l-Ooe"/>
+                        <constraint firstAttribute="height" constant="23" id="qTg-oD-JQJ"/>
+                        <constraint firstItem="16e-bH-sDr" firstAttribute="centerX" secondItem="OnF-TM-jL5" secondAttribute="centerX" id="tcW-ca-rvi"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="tcW-ca-rvi"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OnF-TM-jL5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="00h-v9-gc6"/>
+                <constraint firstItem="OnF-TM-jL5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7NX-6j-kRk"/>
+                <constraint firstAttribute="trailing" secondItem="OnF-TM-jL5" secondAttribute="trailing" id="xus-xq-djA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnTurnOn" destination="16e-bH-sDr" id="Lwx-WW-Tit"/>
+                <outlet property="vLocationContainer" destination="OnF-TM-jL5" id="JGI-jB-dqP"/>
+            </connections>
+            <point key="canvasLocation" x="343" y="250"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,254 @@
+/*
+ Localizables.strings
+ HeyDenmark
+ 
+ Created by Phan Nam on 8/7/13.
+ Copyright (c) 2013 Codebox Solutions Ltd. All rights reserved.
+ */
+
+//spine
+"finder_position_spinner_text"                  =   "Finder position...";
+"spinner_text_wait"                             =   "Please wait...";
+"spinner_text_loading"                          =   "Loading...";
+"spinner_text_wait_country_detecting"           =   "Current country detecting";
+
+//alert message
+"alert_title_info"                              =   "Info";
+"alert_title_error"                             =   "Error";
+"alert_title_warning"                           =   "Warning";
+"alert_title_congratulation"                    =   "Congratulation";
+"alert_title_sorry"                             =   "Sorry";
+
+"alert_button_ok"                               =   "OK";
+"alert_button_notnow"                           =   "Not Now";
+"alert_button_cancel"                           =   "Cancel";
+"alert_button_skip"                             =   "Skip";
+"alert_button_yes"                              =   "Yes";
+"alert_button_no"                               =   "No";
+"alert_button_activate"                         =   "Activate";
+"alert_button_deactivate"                       =   "Deactivate";
+"alert_button_send"                             =   "Send";
+"alert_button_save"                             =   "Save";
+"text_what_are_you_post"                        =   "What are you posting?";
+
+"alert_nonetwork_message"                       =   "No connection to the Internet!";
+"alert_server_error_message"                    =   "There was a problem connecting with server. Please try again.";
+"disable_male_option"                           =   "Currently we are a Women's only network. Tell a woman friend of yours to join EthnicThread to post your Men's Style items.";
+"please_enter_keyword_message"                  =   "Please enter a keyword";
+"alert_not_update_message"                      =   "Status is not changed";
+"alert_delete_thread_confirm"                   =   "Do you want to delete the thread?";
+"location_setting_off"                          =   "Your location settings are off. In order to display relevant results, please turn on location or";
+"post_something_type"                           =   "What do you want to post?";
+"product"                                       =   "PRODUCT";
+"talent"                                        =   "TALENT";
+"no_item_results"                               =   "There is no item in your location please change your location";
+"no_item_results_setting"                       =   "No results for current selection";
+"alert_incorect_format_password"                =   "Password must be at least 8 characters.";
+"alert_new_password_different_old_one"          =   "New password must be different from the old one.";
+"alert_enter_incorrect_old_password"            =   "You have provided an incorrect current password!";
+"alert_enter_not_match_password"                =   "Confirm password is not match!";
+"alert_invalid_access_token"                    =   "Invalid access token, Please relogin your app!";
+"alert_delete_item_confirm"                     =   "Do you want to delete the item?";
+"alert_remove_item_from_wishlist_confirm"       =   "Do you want to remove the item from your wish list?";
+"alert_please_enable_location_service"          =   "Please enable Location Services in Setting > Privacy.";
+"alert_login_with_fb_failed"                    =   "We were not able to log you in with Facebook. Please try again.";
+"alert_please_logedin"                          =   "Please log in to continue.";
+"alert_please_enter_your_comment"               =   "Please enter your comment.";
+"alert_please_enter_your_review"                =   "Please enter your review.";
+"alert_please_enter_your_message"               =   "Please enter your mesage.";
+"alert_sent_mail_dont_support"                  =   "Your device doesn't support the composer sheet.";
+"alert_requite_to_complete_profile"             =   "Do you want to complete your Profile?";
+"alert_send_mail_faild"                         =   "An error occurred when trying to compose this email. Please try again.";
+"alert_delete_comment"                          =   "Do you want to delete this comment?";
+"alert_delete_review"                           =   "Do you want to delete this review?";
+"alert_must_complete_profile"                   =   "Please complete your Profile to continue.";
+"alert_can_not_open_youtube"                    =   "Can't open the youtube.";
+"alert_enter_required_fields"                   =   "Please enter all required fields.";
+"alert_remide_user_login"                       =   "Log into your Ethnic Thread account to buy or sale items.";
+"alert_not_allow_location_permission"           =    "You have not allowed Location Permission for this app. Your items display will be for the entire world. Please enable Location Permission in Settings to see results for your area.";
+"alert_detect_location_time_out"                =   "Can't find your current location. Your items display will be for the entire world till your current location will be found.";
+"alert_reset_password_successfully"             =   "Your new password has been emailed to you. Please check your spam folder as well.";
+"alert_not_accept_eula"                         =   "You have not accepted the EULA yet. Please try again.";
+"alert_mark_inappropriate"                      =   "Do you want to flag this content as inappropriate?";
+"alert_enter_invite_code"                       =   "Do you have a invite code? Enter it now.";
+"alert_profile_photo"                           =   "Profile photo is required";
+"alert_US_50"                                   =   "Did you know that used items less than $50 sell faster?";
+//normal text
+"text_description"                              =   "Description";
+"text_sold"                                     =   "Sold";
+"text_unvailable"                               =   "Not Available";
+"text_new"                                      =   "New";
+"text_likenew"                                  =   "Like New ";
+"take_photo"                                    =   "Take Photo";
+"choose_from_photo_library"                     =   "Choose from Photo Library";
+"discover"                                      =   "Discover";
+"discover_services"                             =   "Discover Talent";
+"account"                                       =   "Account";
+"signup"                                        =   "Sign Up";
+"all_styles"                                    =   "ALL STYLES?";
+"all_talents"                                   =   "ALL TALENTS?";
+"login"                                         =   "Log In";
+"forgot_password"                               =   "Forgot Password";
+"logout"                                        =   "Log Out";
+"item_listed"                                   =   "item listed";
+"items_listed"                                  =   "items listed";
+"search_results"                                =   "Search Results";
+"size"                                          =   "Size";
+"review"                                        =   "Review";
+"reviews"                                       =   "Reviews";
+"comment"                                       =   "Comment";
+"comments"                                      =   "Comments";
+"follower"                                      =   "Follower";
+"gallery"                                       =   "Gallery";
+"social_view"                                   =   "Social View";
+"followers"                                     =   "Followers";
+"like"                                          =   "Like";
+"likes"                                         =   "Likes";
+"see_other_post"                                =   "→ see my other posts";
+"all_reviews"                                   =   "All Reviews";
+"all_comments"                                  =   "All Comments";
+"new_review"                                    =   "New Review";
+"new_comment"                                   =   "New Comment";
+"your_comment_here"                             =   "Your comment here";
+"your_review_here"                              =   "Your review here";
+"birthday"                                      =   "Birthday";
+"select_tags"                                   =   "Select Tags";
+"select_size"                                   =   "Select Size";
+"add_photo"                                     =   "Add Photo";
+"add_detail"                                    =   "Add Detail";
+"input_description"                             =   "Input Description";
+"input_describe_size"                           =   "Input Describe Size";
+"see_it_here"                                   =   "See it here";
+"input_about_me"                                =   "Input About Me";
+"location"                                      =   "Location";
+"edit_item"                                     =   "Edit Item";
+"done"                                          =   "Done";
+"contact_seller"                                =   "Contact Seller";
+"type_a_message"                                =   "Write a message...";
+"type_a_comment"                                =   "Write a comment...";
+"type_a_review"                                 =   "Write a review...";
+"please_rate"                                   =   "Please Rate";
+"anywhere"                                      =   "Anywhere within Country";
+"currencies"                                    =   "Currencies";
+"about_me"                                      =   "About Me";
+"terms_of_sales"                                =   "Terms of Sales";
+"follow"                                        =   "Follow";
+"unfollow"                                      =   "Unfollow";
+"item_description"                              =   "Item description. Please note color";
+"service_description"                           =   "Enter Service Description. You may #tag friends or business names here.";
+"size_description"                              =   "Size description";
+"view_previous_comments"                        =   "View previous comments...";
+"view_previous_reviews"                         =   "View previous reviews...";
+"likers"                                        =   "Likers";
+"seller_names"                                  =   "Search by name";
+"done"                                          =   "Done";
+"no_description"                                =   "No description.";
+"send_email"                                    =   "Send Email";
+"message_to_buy_item"                           =   "I would like to buy this item.";
+"message_interested_in_service"                 =   "I am interested in this service.";
+"_all"                                          =   "...All";
+"listed_items"                                  =   "Listed Items";
+"support_request"                               =   "Support Request";
+"having_trouble_request"                        =   "Having trouble";
+"edit"                                          =   "Edit";
+"delete"                                        =   "Delete";
+"promotion_all"                                 =   "All";
+"promotion_more"                                =   "More";
+"notifications"                                 =   "Notifications";
+"for_fun"                                       =   "For fun";
+"countries"                                     =   "Countries";
+"default_address"                               =   "Default Address";
+"current_location"                              =   "Current Location";
+"terms_of_sales_default_text"                   =   "All sales final. Return/Exchange only if we are friends.";
+"update_profile"                                =   "Update Profile";
+"my_style"                                      =   "My Style";
+"added_on"                                      =   "Added on";
+"no_results_within_x_mile"                      =   "No Results within %ld %@";
+"no_results_search_anywhere"                    =   "No Results in country for your search.";
+"terms_of_services"                             =   "Terms of Service";
+"any_seller"                                    =   "Any Seller";
+"follow_seller_firstname"                       =   "+Follow %@";
+"alert_crop_image"                              =   "Do you want to crop image?";
+"followed"                                      =   "followed";
+"follow_me"                                     =   "+ follow me";
+
+// sharing text
+"seller"                                        =   "Seller";
+"invite_friend_string"                          =   "It's a fun photo app to SELL, EXCHANGE or RENT Ethnic fashion from our closets with friends and others.\nYou could also look up related services such as makeup artists, henna artists, photographers right around you!\n\nDownload the app now, check out my style postings and follow me.";
+"invite_friend_string_twitter"                          =   "Download the app now, check out my style postings and follow me.";
+"email_subjcet_share_this_app"                  =   "Have you checked out the EthnicThread app?";
+"email_subject_share_item"                      =   "I thought you'd love this!";
+"email_subject_invite_friends"                  =   "Hey, Come join me on EthnicThread app! Will ya?";
+"text_checkout_app"                             =   "You gotta check this out on EthnicThread App!";
+"item_sharing_link_text"                        =   "Don't have the app yet? Get it here: ";
+"applink"                                       =   "App link";
+"text_to_share_this_app"                        =   "It's a fun photo app to SELL, EXCHANGE or RENT Ethnic fashion from our closets with friends and others.\nYou could also look up related services such as makeup artists, henna artists, photographers right around you!\n\nDownload the app now and check out my style postings.";
+"text_to_share_this_app_twitter"                        =   "Check out my style postings.";
+
+// menu
+"profile"                                       =   "Profile";
+"search"                                        =   "Search";
+"discover"                                      =   "Discover Styles";
+"how_it_works"                                  =   "How It Works";
+"wishlist"                                      =   "Wish List";
+"my_followers"                                  =   "My Followers";
+"post_something"                                =   "Post Something";
+"my_postings"                                   =   "My Postings";
+"inbox"                                         =   "Inbox";
+"invite_friends"                                =   "Invite Friends";
+"following"                                     =   "I Am Following";
+"faq"                                           =   "FAQ";
+"contact_us"                                    =   "Contact Us";
+"having_trouble"                                =   "Having Trouble?";
+"version"                                       =   "Version";
+
+// format time
+"format_via_from_source"		= " via %@";
+"format_date_friendly_minute"	= "%d minute";
+"format_date_friendly_minutes"	= "%d minutes";
+"format_date_friendly_hour_minute"	= "%d hour %d minute";
+"format_date_friendly_hours_minute"	= "%d hours %d minute";
+"format_date_friendly_hour_minutes"	= "%d hour %d minutes";
+"format_date_friendly_hours_minutes"	= "%d hours %d minutes";
+"format_date_friendly_hour"	= "%d hour";
+"format_date_friendly_hours"	= "%d hours";
+"format_date_friendly_day_hour"	= "%d day %d hour";
+"format_date_friendly_days_hour"	= "%d days %d hour";
+"format_date_friendly_day_hours"	= "%d day %d hours";
+"format_date_friendly_days_hours"	= "%d days %d hours";
+"format_date_friendly_day"	= "%d day";
+"format_date_friendly_days"	= "%d days";
+"format_date_friendly_month_day"	= "%d month %d day";
+"format_date_friendly_months_day"	= "%d months %d day";
+"format_date_friendly_month_days"	= "%d month %d days";
+"format_date_friendly_months_days"	= "%d months %d days";
+"format_date_friendly_month"	= "%d month";
+"format_date_friendly_months"	= "%d months";
+
+"format_date_friendly_duration_minute"	= "%d minute";
+"format_date_friendly_duration_minutes"	= "%d minutes";
+"format_date_friendly_duration_hour_minute"	= "%d hour %d min";
+"format_date_friendly_duration_hours_minute"	= "%d hours %d min";
+"format_date_friendly_duration_hour_minutes"	= "%d hour %d mins";
+"format_date_friendly_duration_hours_minutes"	= "%d hours %d mins";
+"format_date_friendly_duration_hour"	= "%d hour";
+"format_date_friendly_duration_hours"	= "%d hours";
+"format_date_friendly_duration_day_hour"	= "%d day %d hour";
+"format_date_friendly_duration_days_hour"	= "%d days %d hour";
+"format_date_friendly_duration_day_hours"	= "%d day %d hours";
+"format_date_friendly_duration_days_hours"	= "%d days %d hours";
+"format_date_friendly_duration_day"	= "%d day";
+"format_date_friendly_duration_days"	= "%d days";
+"format_date_friendly_duration_month_day"	= "%d month %d day";
+"format_date_friendly_duration_months_day"	= "%d months %d day";
+"format_date_friendly_duration_month_days"	= "%d month %d days";
+"format_date_friendly_duration_months_days"	= "%d months %d days";
+"format_date_friendly_duration_month"	= "%d month";
+"format_date_friendly_duration_months"	= "%d months";
+
+"format_date_friendly_simplepattern"	= "MMM dd, yyyy";
+"format_date_friendly_fullpattern"	= "MM/dd/yyyy, hh:mm";
+
+
+"permission_notification"           =   "Please allow notifications so you can be notified when someone messages you. Quick responses are a key to fast sales.";
+"permission_location"               =   "In order to find sellers and buyers near you, please turn the location setting on";

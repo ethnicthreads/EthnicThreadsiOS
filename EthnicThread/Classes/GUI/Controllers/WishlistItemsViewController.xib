@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WishlistItemsViewController">
+            <connections>
+                <outlet property="galleryBarView" destination="zWl-Ol-z0M" id="5S5-nx-OjV"/>
+                <outlet property="galleryView" destination="Oe7-nj-LiN" id="Mhp-56-NDg"/>
+                <outlet property="lcBottom" destination="3ae-Nq-oJM" id="haU-eA-1Dg"/>
+                <outlet property="lcTop" destination="i4G-Ba-fUK" id="c0N-DY-3z4"/>
+                <outlet property="tableView" destination="dNK-aa-siu" id="tgF-j3-bvk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="zWl-Ol-z0M" userLabel="galleryBar">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="6JH-Ll-SFw"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dNK-aa-siu">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Fol-IS-Gud"/>
+                        <outlet property="delegate" destination="-1" id="g07-Gd-jeG"/>
+                    </connections>
+                </tableView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Oe7-nj-LiN">
+                    <rect key="frame" x="0.0" y="30" width="375" height="637"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="3" id="oVV-D0-e50">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Oe7-nj-LiN" secondAttribute="bottom" id="3ae-Nq-oJM"/>
+                <constraint firstAttribute="trailing" secondItem="zWl-Ol-z0M" secondAttribute="trailing" id="8SW-V3-7yT"/>
+                <constraint firstAttribute="trailing" secondItem="dNK-aa-siu" secondAttribute="trailing" id="9ZD-uE-Ujo"/>
+                <constraint firstItem="Oe7-nj-LiN" firstAttribute="top" secondItem="zWl-Ol-z0M" secondAttribute="bottom" id="IpW-Nj-18L"/>
+                <constraint firstAttribute="bottom" secondItem="dNK-aa-siu" secondAttribute="bottom" id="JlV-b8-aD3"/>
+                <constraint firstAttribute="trailing" secondItem="Oe7-nj-LiN" secondAttribute="trailing" id="LhR-1K-6xf"/>
+                <constraint firstItem="dNK-aa-siu" firstAttribute="top" secondItem="zWl-Ol-z0M" secondAttribute="bottom" id="XgS-K6-BIR"/>
+                <constraint firstItem="zWl-Ol-z0M" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="i4G-Ba-fUK"/>
+                <constraint firstItem="dNK-aa-siu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="juw-Tq-Nvp"/>
+                <constraint firstItem="Oe7-nj-LiN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pxJ-te-G7h"/>
+                <constraint firstItem="zWl-Ol-z0M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="u2M-o6-one"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="dNK-aa-siu"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="9ZD-uE-Ujo"/>
+                    <exclude reference="JlV-b8-aD3"/>
+                    <exclude reference="juw-Tq-Nvp"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="dNK-aa-siu"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="9ZD-uE-Ujo"/>
+                    <include reference="JlV-b8-aD3"/>
+                    <include reference="juw-Tq-Nvp"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

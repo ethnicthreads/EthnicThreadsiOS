@@ -1,0 +1,16 @@
+.DS_Store
+.DS_Store?
+build
+Pods/*
+EthnicThread.xcodeproj/project.xcworkspace/xcuserdata/*
+EthnicThread.xcodeproj/project.xcworkspace/xcshareddata/*
+EthnicThread.xcodeproj/xcuserdata/UserInterfaceState.xcuserstate
+EthnicThread.xcodeproj/xcuserdata/*
+
+*.xcuserstate
+
+*.xcbkptlist
+
+*.xcbkptlist
+
+EthnicThread.xcworkspace/xcuserdata/DuyLoc.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist

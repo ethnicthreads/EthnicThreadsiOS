@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddItemFinishViewController">
+            <connections>
+                <outlet property="btnTellFollower" destination="Zv7-MT-Rdh" id="mst-QC-wBm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="success_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="JKx-0d-eNG">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUCCESS!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oY-CS-FD7">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                    <color key="textColor" red="0.66274509803921566" green="0.38823529411764707" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zv7-MT-Rdh">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="283" id="3EW-Gt-KxX">
+                            <variation key="heightClass=regular-widthClass=compact" constant="280"/>
+                        </constraint>
+                        <constraint firstAttribute="width" secondItem="Zv7-MT-Rdh" secondAttribute="height" multiplier="283:46" id="5d4-Tc-X02">
+                            <variation key="heightClass=regular-widthClass=compact" constant="33.913043478260875"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="TELL ALL FOLLOWERS" backgroundImage="bg_button_selected.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="3EW-Gt-KxX"/>
+                            <exclude reference="5d4-Tc-X02"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="3EW-Gt-KxX"/>
+                            <include reference="5d4-Tc-X02"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="handleTellAllFollowers:" destination="-1" eventType="touchUpInside" id="NXh-Yf-rbG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vP-yK-Hno">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="Cni-5H-TI5"/>
+                        <constraint firstAttribute="width" constant="57" id="hpY-Tc-eng"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="add_more_button.png"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Cni-5H-TI5"/>
+                            <exclude reference="hpY-Tc-eng"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Cni-5H-TI5"/>
+                            <include reference="hpY-Tc-eng"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="handleAddNew:" destination="-1" eventType="touchUpInside" id="myj-Yf-sI0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mys-W3-7eQ">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="144" id="6cy-3q-29v"/>
+                        <constraint firstAttribute="height" constant="38" id="fiD-iV-XvM"/>
+                    </constraints>
+                    <state key="normal" title="Back to Discover">
+                        <color key="titleColor" red="0.69803923369999998" green="0.43921571970000001" blue="0.6784313917" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="6cy-3q-29v"/>
+                            <exclude reference="fiD-iV-XvM"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="6cy-3q-29v"/>
+                            <include reference="fiD-iV-XvM"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="handleBackDiscoverPage:" destination="-1" eventType="touchUpInside" id="KZT-ez-AQG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Zv7-MT-Rdh" firstAttribute="top" secondItem="9oY-CS-FD7" secondAttribute="bottom" constant="25" id="CzL-15-tMj"/>
+                <constraint firstAttribute="centerX" secondItem="9vP-yK-Hno" secondAttribute="centerX" constant="-4.5" id="I0C-jX-fXe">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="JKx-0d-eNG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="201" id="IU7-Pc-ijf">
+                    <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                </constraint>
+                <constraint firstItem="Zv7-MT-Rdh" firstAttribute="top" secondItem="9oY-CS-FD7" secondAttribute="bottom" constant="24" id="KUD-8g-Z6A">
+                    <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                </constraint>
+                <constraint firstItem="9oY-CS-FD7" firstAttribute="top" secondItem="JKx-0d-eNG" secondAttribute="bottom" constant="20" id="Kfi-ds-QSD"/>
+                <constraint firstItem="9oY-CS-FD7" firstAttribute="centerX" secondItem="Zv7-MT-Rdh" secondAttribute="centerX" id="TdQ-Id-hPQ"/>
+                <constraint firstItem="9oY-CS-FD7" firstAttribute="top" secondItem="JKx-0d-eNG" secondAttribute="bottom" constant="8" id="Vjb-AZ-VS6">
+                    <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                </constraint>
+                <constraint firstAttribute="centerX" secondItem="9oY-CS-FD7" secondAttribute="centerX" constant="-0.5" id="XAM-bK-8Tk">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="mys-W3-7eQ" firstAttribute="top" secondItem="Zv7-MT-Rdh" secondAttribute="bottom" constant="24" id="dGC-f6-c5T"/>
+                <constraint firstAttribute="centerX" secondItem="JKx-0d-eNG" secondAttribute="centerX" id="eeA-n1-xQO"/>
+                <constraint firstAttribute="centerX" secondItem="Zv7-MT-Rdh" secondAttribute="centerX" id="fZI-1E-sBZ"/>
+                <constraint firstItem="9vP-yK-Hno" firstAttribute="top" secondItem="Zv7-MT-Rdh" secondAttribute="bottom" constant="89" id="hhQ-ny-T5a">
+                    <variation key="heightClass=regular-widthClass=compact" constant="120"/>
+                </constraint>
+                <constraint firstAttribute="centerY" secondItem="Zv7-MT-Rdh" secondAttribute="centerY" id="ivl-s2-cXC">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="9oY-CS-FD7" firstAttribute="centerX" secondItem="JKx-0d-eNG" secondAttribute="centerX" id="kwn-iz-KMD"/>
+                <constraint firstAttribute="bottom" secondItem="9vP-yK-Hno" secondAttribute="bottom" constant="117" id="n2m-gi-JrR">
+                    <variation key="heightClass=regular-widthClass=compact" constant="115"/>
+                </constraint>
+                <constraint firstAttribute="centerX" secondItem="mys-W3-7eQ" secondAttribute="centerX" id="rco-tq-Ntg"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="JKx-0d-eNG"/>
+                    <exclude reference="9oY-CS-FD7"/>
+                    <exclude reference="Zv7-MT-Rdh"/>
+                    <exclude reference="9vP-yK-Hno"/>
+                    <exclude reference="mys-W3-7eQ"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Kfi-ds-QSD"/>
+                    <exclude reference="TdQ-Id-hPQ"/>
+                    <exclude reference="Vjb-AZ-VS6"/>
+                    <exclude reference="XAM-bK-8Tk"/>
+                    <exclude reference="kwn-iz-KMD"/>
+                    <exclude reference="I0C-jX-fXe"/>
+                    <exclude reference="hhQ-ny-T5a"/>
+                    <exclude reference="n2m-gi-JrR"/>
+                    <exclude reference="CzL-15-tMj"/>
+                    <exclude reference="KUD-8g-Z6A"/>
+                    <exclude reference="fZI-1E-sBZ"/>
+                    <exclude reference="ivl-s2-cXC"/>
+                    <exclude reference="dGC-f6-c5T"/>
+                    <exclude reference="rco-tq-Ntg"/>
+                    <exclude reference="IU7-Pc-ijf"/>
+                    <exclude reference="eeA-n1-xQO"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="JKx-0d-eNG"/>
+                    <include reference="9oY-CS-FD7"/>
+                    <include reference="Zv7-MT-Rdh"/>
+                    <include reference="9vP-yK-Hno"/>
+                    <include reference="mys-W3-7eQ"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Kfi-ds-QSD"/>
+                    <exclude reference="TdQ-Id-hPQ"/>
+                    <exclude reference="Vjb-AZ-VS6"/>
+                    <include reference="XAM-bK-8Tk"/>
+                    <exclude reference="kwn-iz-KMD"/>
+                    <include reference="I0C-jX-fXe"/>
+                    <include reference="hhQ-ny-T5a"/>
+                    <exclude reference="n2m-gi-JrR"/>
+                    <include reference="CzL-15-tMj"/>
+                    <exclude reference="KUD-8g-Z6A"/>
+                    <include reference="fZI-1E-sBZ"/>
+                    <include reference="ivl-s2-cXC"/>
+                    <include reference="dGC-f6-c5T"/>
+                    <include reference="rco-tq-Ntg"/>
+                    <exclude reference="IU7-Pc-ijf"/>
+                    <include reference="eeA-n1-xQO"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="add_more_button.png" width="57" height="57"/>
+        <image name="bg_button_selected.png" width="46" height="46"/>
+        <image name="success_icon.png" width="66" height="64"/>
+    </resources>
+</document>

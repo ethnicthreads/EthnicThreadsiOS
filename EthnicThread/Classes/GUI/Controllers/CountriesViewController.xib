@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountriesViewController">
+            <connections>
+                <outlet property="lcTop" destination="p31-tX-W1F" id="C0r-Qm-cbz"/>
+                <outlet property="searchBar" destination="mM7-1D-imK" id="051-gf-zu1"/>
+                <outlet property="searchDisplayController" destination="rmf-oC-L2E" id="ffH-yd-20P"/>
+                <outlet property="tableView" destination="kfj-Cb-5dV" id="McS-Qy-q2h"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="Country" translatesAutoresizingMaskIntoConstraints="NO" id="mM7-1D-imK">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="oYY-5i-sOZ"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="oYY-5i-sOZ"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="oYY-5i-sOZ"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="uJq-aZ-Yjs"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kfj-Cb-5dV">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="VOE-Ud-YHM"/>
+                        <outlet property="delegate" destination="-1" id="tcL-Lk-pBj"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mM7-1D-imK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8Cp-SM-HQQ"/>
+                <constraint firstItem="kfj-Cb-5dV" firstAttribute="top" secondItem="mM7-1D-imK" secondAttribute="bottom" id="FJD-sh-TtX"/>
+                <constraint firstAttribute="trailing" secondItem="kfj-Cb-5dV" secondAttribute="trailing" id="TZT-TP-7lK"/>
+                <constraint firstAttribute="bottom" secondItem="kfj-Cb-5dV" secondAttribute="bottom" id="aaq-bC-lRI"/>
+                <constraint firstItem="mM7-1D-imK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="p31-tX-W1F"/>
+                <constraint firstItem="kfj-Cb-5dV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wcM-SF-1Me"/>
+                <constraint firstAttribute="trailing" secondItem="mM7-1D-imK" secondAttribute="trailing" id="z26-iE-Twx"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="mM7-1D-imK"/>
+                    <exclude reference="kfj-Cb-5dV"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="8Cp-SM-HQQ"/>
+                    <exclude reference="p31-tX-W1F"/>
+                    <exclude reference="z26-iE-Twx"/>
+                    <exclude reference="FJD-sh-TtX"/>
+                    <exclude reference="TZT-TP-7lK"/>
+                    <exclude reference="aaq-bC-lRI"/>
+                    <exclude reference="wcM-SF-1Me"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="mM7-1D-imK"/>
+                    <include reference="kfj-Cb-5dV"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="8Cp-SM-HQQ"/>
+                    <include reference="p31-tX-W1F"/>
+                    <include reference="z26-iE-Twx"/>
+                    <include reference="FJD-sh-TtX"/>
+                    <include reference="TZT-TP-7lK"/>
+                    <include reference="aaq-bC-lRI"/>
+                    <include reference="wcM-SF-1Me"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="34" y="92"/>
+        </view>
+        <searchDisplayController id="rmf-oC-L2E">
+            <connections>
+                <outlet property="delegate" destination="-1" id="TSj-cW-gUC"/>
+                <outlet property="searchContentsController" destination="-1" id="eTQ-Io-yQo"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="VKV-oq-W1I"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="juY-UD-4zf"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+</document>

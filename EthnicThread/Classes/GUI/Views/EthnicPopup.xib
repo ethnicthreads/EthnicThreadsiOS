@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EthnicPopup">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmF-Gj-lbX">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration" label="">
+                        <accessibilityTraits key="traits" none="YES" button="YES"/>
+                    </accessibility>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Vd-u7-DMv">
+                    <rect key="frame" x="0.0" y="50" width="320" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Wtc-Kt-d9Y"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVa-t9-INi">
+                    <rect key="frame" x="0.0" y="51" width="320" height="463"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSm-yE-X47">
+                    <rect key="frame" x="0.0" y="513" width="320" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="i2k-52-dwI"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7z-dB-rhC">
+                    <rect key="frame" x="8" y="16" width="304" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="9Mg-Ik-fQu"/>
+                        <constraint firstAttribute="width" constant="304" id="vdg-oG-lnK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2y-bb-fgh">
+                    <rect key="frame" x="143" y="523" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="MvJ-GT-ODq"/>
+                        <constraint firstAttribute="height" constant="35" id="pOV-p5-vV6"/>
+                    </constraints>
+                    <state key="normal" image="small_close.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="handleCloseButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="zcg-gf-5f9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VSm-yE-X47" secondAttribute="trailing" id="68o-Um-Kw4"/>
+                <constraint firstAttribute="centerX" secondItem="G2y-bb-fgh" secondAttribute="centerX" constant="-0.5" id="7dC-Ef-L1h"/>
+                <constraint firstItem="g7z-dB-rhC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="7sx-h0-PO5"/>
+                <constraint firstItem="cmF-Gj-lbX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ajr-mH-SCV"/>
+                <constraint firstAttribute="bottom" secondItem="VSm-yE-X47" secondAttribute="bottom" constant="54" id="CCD-pm-9qu"/>
+                <constraint firstAttribute="centerX" secondItem="g7z-dB-rhC" secondAttribute="centerX" id="De5-gl-Isc"/>
+                <constraint firstItem="VSm-yE-X47" firstAttribute="top" secondItem="TVa-t9-INi" secondAttribute="bottom" constant="-1" id="H37-mX-49N"/>
+                <constraint firstAttribute="trailing" secondItem="TVa-t9-INi" secondAttribute="trailing" id="MTC-3b-Dqx"/>
+                <constraint firstAttribute="bottom" secondItem="cmF-Gj-lbX" secondAttribute="bottom" id="OKz-p1-jeU"/>
+                <constraint firstItem="TVa-t9-INi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OmL-om-nyh"/>
+                <constraint firstItem="0Vd-u7-DMv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="V31-gz-nf8"/>
+                <constraint firstAttribute="trailing" secondItem="cmF-Gj-lbX" secondAttribute="trailing" id="WMT-om-zCi"/>
+                <constraint firstItem="cmF-Gj-lbX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cpX-wH-tz5"/>
+                <constraint firstItem="TVa-t9-INi" firstAttribute="top" secondItem="0Vd-u7-DMv" secondAttribute="bottom" id="gMF-6c-7PI"/>
+                <constraint firstItem="VSm-yE-X47" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hM9-Tl-Sir"/>
+                <constraint firstItem="0Vd-u7-DMv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="kfQ-Xe-APe"/>
+                <constraint firstAttribute="bottom" secondItem="G2y-bb-fgh" secondAttribute="bottom" constant="10" id="q0C-Kb-0c3"/>
+                <constraint firstAttribute="trailing" secondItem="0Vd-u7-DMv" secondAttribute="trailing" id="yhl-QA-JrB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="btnClose" destination="G2y-bb-fgh" id="QDi-kz-3zs"/>
+                <outlet property="containerView" destination="TVa-t9-INi" id="kGV-5w-EPj"/>
+                <outlet property="lblTitle" destination="g7z-dB-rhC" id="zKI-Zy-e7u"/>
+            </connections>
+            <point key="canvasLocation" x="337" y="396"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="small_close.png" width="15" height="15"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

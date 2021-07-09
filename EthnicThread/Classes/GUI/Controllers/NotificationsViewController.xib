@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationsViewController">
+            <connections>
+                <outlet property="btnMarkAll" destination="X2e-e9-QZf" id="V0h-KZ-u8b"/>
+                <outlet property="lcHeightMarkAllButton" destination="DQ5-eb-wfO" id="x7g-go-JKx"/>
+                <outlet property="lcTop" destination="vzT-C5-DVd" id="xWh-B7-qTa"/>
+                <outlet property="tableView" destination="oxf-mO-aIs" id="hgA-Qg-F2o"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2e-e9-QZf">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.69803923369999998" green="0.43921571970000001" blue="0.6784313917" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="DQ5-eb-wfO"/>
+                    </constraints>
+                    <state key="normal" title="Mark all as read">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="DQ5-eb-wfO"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="DQ5-eb-wfO"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="handleMarkAllButton:" destination="-1" eventType="touchUpInside" id="y1S-nf-181"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oxf-mO-aIs">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="CUx-6d-dA0"/>
+                        <outlet property="delegate" destination="-1" id="Zue-WF-3U5"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="oxf-mO-aIs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Y8-Hu-R5n"/>
+                <constraint firstAttribute="trailing" secondItem="oxf-mO-aIs" secondAttribute="trailing" id="811-NX-H2s"/>
+                <constraint firstItem="oxf-mO-aIs" firstAttribute="top" secondItem="X2e-e9-QZf" secondAttribute="bottom" id="H1f-gD-w0k"/>
+                <constraint firstAttribute="bottom" secondItem="oxf-mO-aIs" secondAttribute="bottom" id="Jh9-xj-j6t"/>
+                <constraint firstAttribute="trailing" secondItem="X2e-e9-QZf" secondAttribute="trailing" id="M1e-Yd-lrC"/>
+                <constraint firstItem="X2e-e9-QZf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Pbu-gD-udb"/>
+                <constraint firstItem="X2e-e9-QZf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vzT-C5-DVd"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="X2e-e9-QZf"/>
+                    <exclude reference="oxf-mO-aIs"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="M1e-Yd-lrC"/>
+                    <exclude reference="Pbu-gD-udb"/>
+                    <exclude reference="vzT-C5-DVd"/>
+                    <exclude reference="4Y8-Hu-R5n"/>
+                    <exclude reference="811-NX-H2s"/>
+                    <exclude reference="H1f-gD-w0k"/>
+                    <exclude reference="Jh9-xj-j6t"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="X2e-e9-QZf"/>
+                    <include reference="oxf-mO-aIs"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="M1e-Yd-lrC"/>
+                    <include reference="Pbu-gD-udb"/>
+                    <include reference="vzT-C5-DVd"/>
+                    <include reference="4Y8-Hu-R5n"/>
+                    <include reference="811-NX-H2s"/>
+                    <include reference="H1f-gD-w0k"/>
+                    <include reference="Jh9-xj-j6t"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

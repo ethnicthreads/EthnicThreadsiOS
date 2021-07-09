@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DiscoverMoreDiaglog">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7B9-E7-GJg" userLabel="vContainer">
+                    <rect key="frame" x="50" y="285.5" width="314" height="325"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hT-l7-4Tg" userLabel="btnClose">
+                            <rect key="frame" x="294" y="0.0" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="0Ql-Od-GOs"/>
+                                <constraint firstAttribute="height" constant="20" id="MCM-3q-78Z"/>
+                            </constraints>
+                            <state key="normal" image="delete_button.png"/>
+                            <connections>
+                                <action selector="didTapClose:" destination="iN0-l3-epB" eventType="touchUpInside" id="xsi-jk-DtN"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More ways to search for cool things around you or elsewhere in the world" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bup-n2-BHQ" userLabel="lblDescription">
+                            <rect key="frame" x="10" y="26" width="294" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="5Co-CN-gci"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Xnh-VI-o0A"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="5Co-CN-gci"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Y2-rm-gvM" userLabel="btnQStyles">
+                            <rect key="frame" x="113" y="92" width="88" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="1cy-gf-fgR"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="aZT-ky-UrE"/>
+                            </constraints>
+                            <state key="normal" title="Styles" image="purple_search_button.png">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapStyle:" destination="iN0-l3-epB" eventType="touchUpInside" id="RPx-fr-F5v"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fashions, homedecor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfT-7g-83t" userLabel="lblStyles">
+                            <rect key="frame" x="10" y="127" width="294" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="hMl-iX-U7L"/>
+                                <constraint firstAttribute="height" constant="21" id="w65-Qv-Aco"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="hMl-iX-U7L"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B1-vk-VHv" userLabel="btnQTalent">
+                            <rect key="frame" x="109" y="168" width="96" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="U1q-ig-JEZ"/>
+                                <constraint firstAttribute="height" constant="30" id="qqF-T9-Wuq"/>
+                            </constraints>
+                            <state key="normal" title="Talents" image="purple_search_button.png"/>
+                            <connections>
+                                <action selector="didTapTalents:" destination="iN0-l3-epB" eventType="touchUpInside" id="J6d-ko-brU"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Henna, beauty, designing, tailoring" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65h-Bf-6Ud" userLabel="lblTalent">
+                            <rect key="frame" x="10" y="203" width="294" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="GJJ-uC-GCR"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="peE-bi-3B9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="peE-bi-3B9"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKk-qk-omL" userLabel="btnPeople">
+                            <rect key="frame" x="110" y="244" width="94" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="kK6-DN-yD3"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="mTX-u4-NHb"/>
+                            </constraints>
+                            <state key="normal" title="People" image="purple_search_button.png">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapPeople:" destination="iN0-l3-epB" eventType="touchUpInside" id="Azi-Ym-UqH"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search fashionistas, sellers by name or city" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZl-El-fOH" userLabel="lblPeople">
+                            <rect key="frame" x="10" y="279" width="294" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Zhx-yL-QM1"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="g1e-RQ-5gJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="g1e-RQ-5gJ"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="As8-4g-z9E" userLabel="linebreak">
+                            <rect key="frame" x="0.0" y="20" width="314" height="1"/>
+                            <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="IXf-00-cFi"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="bup-n2-BHQ" firstAttribute="leading" secondItem="7B9-E7-GJg" secondAttribute="leading" constant="10" id="1Tf-gU-kCu"/>
+                        <constraint firstItem="NZl-El-fOH" firstAttribute="leading" secondItem="7B9-E7-GJg" secondAttribute="leading" constant="10" id="1ey-MV-vdO"/>
+                        <constraint firstItem="NZl-El-fOH" firstAttribute="centerX" secondItem="vKk-qk-omL" secondAttribute="centerX" id="3qd-2F-l0n"/>
+                        <constraint firstAttribute="trailing" secondItem="As8-4g-z9E" secondAttribute="trailing" id="69l-Cv-hDg"/>
+                        <constraint firstItem="2Y2-rm-gvM" firstAttribute="top" secondItem="bup-n2-BHQ" secondAttribute="bottom" constant="30" id="6vC-Cp-lKF"/>
+                        <constraint firstItem="vKk-qk-omL" firstAttribute="centerX" secondItem="7B9-E7-GJg" secondAttribute="centerX" id="AFM-iM-Qkj"/>
+                        <constraint firstItem="NZl-El-fOH" firstAttribute="top" secondItem="vKk-qk-omL" secondAttribute="bottom" constant="5" id="AUM-YG-f6l"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="BRJ-BP-I4y"/>
+                        <constraint firstItem="65h-Bf-6Ud" firstAttribute="bottom" secondItem="vKk-qk-omL" secondAttribute="top" constant="-20" id="Cs5-OR-IOC"/>
+                        <constraint firstItem="2Y2-rm-gvM" firstAttribute="centerX" secondItem="7B9-E7-GJg" secondAttribute="centerX" id="Jqm-ku-W2i"/>
+                        <constraint firstItem="65h-Bf-6Ud" firstAttribute="top" secondItem="5B1-vk-VHv" secondAttribute="bottom" constant="5" id="N58-FZ-aGv"/>
+                        <constraint firstItem="5B1-vk-VHv" firstAttribute="top" secondItem="EfT-7g-83t" secondAttribute="bottom" constant="20" id="NH6-nT-eAi"/>
+                        <constraint firstAttribute="trailing" secondItem="EfT-7g-83t" secondAttribute="trailing" constant="10" id="NoN-Mf-lFR"/>
+                        <constraint firstItem="bup-n2-BHQ" firstAttribute="top" secondItem="7B9-E7-GJg" secondAttribute="top" constant="30" id="Nyp-6F-aYs"/>
+                        <constraint firstAttribute="trailing" secondItem="6hT-l7-4Tg" secondAttribute="trailing" id="OXo-gT-aZJ"/>
+                        <constraint firstAttribute="trailing" secondItem="NZl-El-fOH" secondAttribute="trailing" constant="10" id="Pma-v7-Zmw"/>
+                        <constraint firstAttribute="trailing" secondItem="bup-n2-BHQ" secondAttribute="trailing" constant="10" id="S2s-Oc-MsZ"/>
+                        <constraint firstItem="As8-4g-z9E" firstAttribute="top" secondItem="7B9-E7-GJg" secondAttribute="top" constant="20" id="Yen-MQ-UJI"/>
+                        <constraint firstItem="bup-n2-BHQ" firstAttribute="top" secondItem="As8-4g-z9E" secondAttribute="bottom" constant="5" id="avh-oW-fjg"/>
+                        <constraint firstItem="EfT-7g-83t" firstAttribute="top" secondItem="2Y2-rm-gvM" secondAttribute="bottom" constant="5" id="bxa-SU-bPT"/>
+                        <constraint firstAttribute="trailing" secondItem="65h-Bf-6Ud" secondAttribute="trailing" constant="10" id="cHD-C0-e7i"/>
+                        <constraint firstItem="6hT-l7-4Tg" firstAttribute="top" secondItem="7B9-E7-GJg" secondAttribute="top" id="dja-yG-nOR"/>
+                        <constraint firstItem="EfT-7g-83t" firstAttribute="leading" secondItem="7B9-E7-GJg" secondAttribute="leading" constant="10" id="ezP-Aq-89L"/>
+                        <constraint firstItem="5B1-vk-VHv" firstAttribute="centerX" secondItem="7B9-E7-GJg" secondAttribute="centerX" id="lov-Xe-n6s"/>
+                        <constraint firstAttribute="bottom" secondItem="NZl-El-fOH" secondAttribute="bottom" constant="10" id="pYN-g3-be0"/>
+                        <constraint firstItem="65h-Bf-6Ud" firstAttribute="leading" secondItem="7B9-E7-GJg" secondAttribute="leading" constant="10" id="xIX-83-YoF"/>
+                        <constraint firstItem="As8-4g-z9E" firstAttribute="leading" secondItem="7B9-E7-GJg" secondAttribute="leading" id="yc3-NY-7na"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="BRJ-BP-I4y"/>
+                            <exclude reference="Nyp-6F-aYs"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="7B9-E7-GJg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9KW-OL-gC2"/>
+                <constraint firstItem="7B9-E7-GJg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="HrH-Au-sSd"/>
+                <constraint firstAttribute="trailing" secondItem="7B9-E7-GJg" secondAttribute="trailing" constant="50" id="tfZ-xP-YPn"/>
+                <constraint firstItem="7B9-E7-GJg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="253" id="uvt-ph-OQ5"/>
+                <constraint firstItem="7B9-E7-GJg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yKR-7L-dLH"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="uvt-ph-OQ5"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="btnClose" destination="6hT-l7-4Tg" id="hKs-Fk-Jhc"/>
+                <outlet property="btnPeople" destination="vKk-qk-omL" id="zz2-E1-kvr"/>
+                <outlet property="btnStyles" destination="2Y2-rm-gvM" id="eQo-aT-Jj6"/>
+                <outlet property="btnTalent" destination="5B1-vk-VHv" id="IZE-f4-1Pv"/>
+                <outlet property="vContainer" destination="7B9-E7-GJg" id="d2l-G2-WMg"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="52"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete_button.png" width="15" height="15"/>
+        <image name="purple_search_button.png" width="19" height="19"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchedUserCell" rowHeight="63" id="KGk-i7-Jjw" customClass="SearchedUserTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C06-Ur-bUB" customClass="AvatarButton">
+                        <rect key="frame" x="8" y="5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="DDy-oD-1ty"/>
+                            <constraint firstAttribute="width" constant="45" id="j3t-n8-NwD"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVi-UZ-6Uk">
+                        <rect key="frame" x="61" y="5" width="251" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="iqq-d7-I2t"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.69803923369999998" green="0.43921571970000001" blue="0.6784313917" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0B-41-n5R">
+                        <rect key="frame" x="61" y="29" width="251" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="axS-Z4-CRT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.29803922770000002" green="0.3058823645" blue="0.30196079609999998" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="C06-Ur-bUB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="0ow-W6-Nft"/>
+                    <constraint firstItem="HVi-UZ-6Uk" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="626-3K-Dnq"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="u0B-41-n5R" secondAttribute="bottom" constant="-3.5" id="68U-RC-8NF"/>
+                    <constraint firstItem="HVi-UZ-6Uk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="9P4-e9-UzP"/>
+                    <constraint firstItem="C06-Ur-bUB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="EcV-O8-LeT"/>
+                    <constraint firstItem="u0B-41-n5R" firstAttribute="leading" secondItem="C06-Ur-bUB" secondAttribute="trailing" constant="8" id="OIz-PV-KDx"/>
+                    <constraint firstItem="u0B-41-n5R" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="ZVC-Ps-PHg"/>
+                    <constraint firstItem="u0B-41-n5R" firstAttribute="top" secondItem="HVi-UZ-6Uk" secondAttribute="bottom" constant="3" id="bk5-FL-LGz"/>
+                    <constraint firstItem="HVi-UZ-6Uk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="53" id="qkl-QQ-Mvx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnAvatar" destination="C06-Ur-bUB" id="qxz-te-eza"/>
+                <outlet property="lblAddress" destination="u0B-41-n5R" id="vAt-Rr-5GV"/>
+                <outlet property="lblDisplayName" destination="HVi-UZ-6Uk" id="vCe-xY-9Yp"/>
+                <outlet property="lcLeadingDisplayNameLabel" destination="qkl-QQ-Mvx" id="fwG-7O-vAM"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="203.5"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6724" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FollowersViewController">
+            <connections>
+                <outlet property="lcTop" destination="OL8-42-qjw" id="ckm-TO-Rwh"/>
+                <outlet property="tableView" destination="7Ma-yl-vdd" id="YLn-uu-A0y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7Ma-yl-vdd">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="5vg-ip-bN1"/>
+                        <outlet property="delegate" destination="-1" id="54Z-eJ-tMg"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="7Ma-yl-vdd" secondAttribute="bottom" id="4qj-NX-gUQ"/>
+                <constraint firstAttribute="trailing" secondItem="7Ma-yl-vdd" secondAttribute="trailing" id="JhM-Cu-9dO"/>
+                <constraint firstItem="7Ma-yl-vdd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OL8-42-qjw"/>
+                <constraint firstItem="7Ma-yl-vdd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PeM-hg-ugr"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="7Ma-yl-vdd"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="4qj-NX-gUQ"/>
+                    <exclude reference="JhM-Cu-9dO"/>
+                    <exclude reference="OL8-42-qjw"/>
+                    <exclude reference="PeM-hg-ugr"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="7Ma-yl-vdd"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="4qj-NX-gUQ"/>
+                    <include reference="JhM-Cu-9dO"/>
+                    <include reference="OL8-42-qjw"/>
+                    <include reference="PeM-hg-ugr"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
